@@ -1,0 +1,16 @@
+{
+  "name": "httpp-server-node",
+  "version": "1.0.0",
+  "private": true,
+  "description": "httpp 协议的 Node.js WS 服务端 (字节级兼容 C# 客户端, 供 Render 部署)",
+  "main": "server.js",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  }
+}

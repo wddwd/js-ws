@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: httpp-ws
+    runtime: node
+    plan: free
+    region: singapore
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /healthz
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
+      # 换密钥时取消注释并填 base64 32 字节; 不填则用代码里的内置默认密钥
+      # - key: HTTPP_PSK
+      #   sync: false
+      # - key: LOG_LEVEL
+      #   value: 消息
